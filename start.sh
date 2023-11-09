@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Jeolpaul/Ultra-Renamer-and-Watermark.git /Ultra-Renamer-and-Watermark    
+  git clone https://github.com/Aluval/Ultra-Renamer-and-Watermark.git /Ultra-Renamer-and-Watermark    
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Ultra-Renamer-and-Watermark
