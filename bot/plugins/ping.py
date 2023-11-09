@@ -9,15 +9,15 @@ from bot.core.db.add import add_user_to_database
 async def ping_handler(c: Client, m: "types.Message"):
     await add_user_to_database(c, m)
     await m.reply_photo(
-       photo="https://telegra.ph//file/69b6154eaecdaf3845d9f.jpg",
-       caption=f"""👋 Hai {m.from_user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 𝚂𝚞𝚙𝚙𝚘𝚛𝚝! \n𝙱𝙾𝚃 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 𝙱𝚢: <a href=https://t.me/beta_bot_updates>βΣTΔ βΩTZ</a> \n 🤩""",
+       photo="https://graph.org/file/cb120e0ef770039b6881e.jpg",
+       caption=f"""𝐇𝐞𝐥𝐥𝐨 𝐌𝐚𝐰𝐚 👋🏻 {m.from_user.mention} \n𝐈'𝐦 𝐀 𝐒𝐢𝐦𝐩𝐥𝐞 𝐅𝐢𝐥𝐞 𝐑𝐞𝐧𝐚𝐦𝐞 + 𝐅𝐢𝐥𝐞 𝐓𝐨 𝐕𝐢𝐝𝐞𝐨 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫 𝐁𝐎𝐓 𝐖𝐢𝐭𝐡 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐒𝐮𝐩𝐩𝐨𝐫𝐭! 😎 \n𝐁𝐎𝐓 𝐂𝐑𝐄𝐀𝐓𝐄𝐃 𝐁𝐘 : <a href=https://t.me/Sunrises24BotUpdates>𝐒𝐔𝐍𝐑𝐈𝐒𝐄𝐒™</a> \n 🤩""",
        reply_markup=InlineKeyboardMarkup( [[
-          InlineKeyboardButton("♀️ OWNER ♀️", url='https://t.me/JP_Jeol_org')
+          InlineKeyboardButton("𝐎𝐖𝐍𝐄𝐑 🧑🏻‍💻", url='https://t.me/Sunrises_24')
           ],[
-          InlineKeyboardButton('🤖 UPDATES', url='https://t.me/beta_bot_updates'),
-          InlineKeyboardButton('💥 SUPPORT', url='https://t.me/BETA_BOTSUPPORT')
+          InlineKeyboardButton('𝐂𝐇𝐀𝐍𝐍𝐄𝐋 🎞️', url='https://t.me/sunriseseditsoffical6'),
+          InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄𝐒 📢', url='https://t.me/Sunrises24BotUpdates')
           ],[
-          InlineKeyboardButton('⚙️ SETTING', callback_data='showSettings')
+          InlineKeyboardButton('𝐒𝐄𝐓𝐓𝐈𝐍𝐆𝐒 ⚙️', callback_data='showSettings')
           ]]
           )
        )
