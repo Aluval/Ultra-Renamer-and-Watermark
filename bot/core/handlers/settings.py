@@ -42,7 +42,7 @@ async def show_settings(m: "types.Message"):
             text="**Here you can setup your settings:**",
             reply_markup=types.InlineKeyboardMarkup(buttons_markup),
             disable_web_page_preview=True,
-            parse_mode="Markdown"
+            parse_mode="markdown"
         )
     except errors.MessageNotModified: pass
     except errors.FloodWait as e:
