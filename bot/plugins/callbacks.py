@@ -86,8 +86,7 @@ async def cb_handlers(c: Client, cb: "types.CallbackQuery"):
         else:
             await cb.answer()
             await cb.message.edit(
-                text=caption,
-                parse_mode="HTML",
+                text=caption,              
                 reply_markup=types.InlineKeyboardMarkup([[
                     types.InlineKeyboardButton("Go Back", callback_data="showSettings")
                 ]])
@@ -109,8 +108,7 @@ async def cb_handlers(c: Client, cb: "types.CallbackQuery"):
                f"**File Size:** `{humanbytes(get_media_file_size(replied_m))}`\n\n" \
                f"**File MimeType:** `{get_file_attr(replied_m).mime_type}`"
         await cb.message.edit(
-            text=text,
-            parse_mode="HTML",
+            text=text,            
             disable_web_page_preview=True,
             reply_markup=types.InlineKeyboardMarkup(
                 [[types.InlineKeyboardButton("Close Message", callback_data="closeMessage")]]
