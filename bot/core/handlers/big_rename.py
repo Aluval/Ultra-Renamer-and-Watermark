@@ -177,7 +177,7 @@ async def handle_big_rename(
         caption = _db_caption
     else:
         caption = ""
-    parse_mode = "Markdown"
+    parse_mode = "markdown"
 
     try:
         r = await c.send(
