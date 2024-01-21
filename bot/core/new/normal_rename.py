@@ -27,7 +27,7 @@ from bot.core.display import progress_for_pyrogram
 from bot.core.utils.audio_info import get_audio_info
 from bot.core.utils.video_info import get_video_info
 from bot.core.utils.thumbnail_info import get_thumbnail_info
-from pyrogram.scaffold import Scaffold
+from pyrogram.types import Scaffold
 
 class NormalRename(Scaffold):
     async def normal_rename(
