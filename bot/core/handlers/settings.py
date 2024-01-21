@@ -41,8 +41,7 @@ async def show_settings(m: "types.Message"):
         await m.edit(
             text="**Here you can setup your settings:**",
             reply_markup=types.InlineKeyboardMarkup(buttons_markup),
-            disable_web_page_preview=True,
-            parse_mode="HTML"
+            disable_web_page_preview=True            
         )
     except errors.MessageNotModified: pass
     except errors.FloodWait as e:
