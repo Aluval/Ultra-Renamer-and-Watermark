@@ -28,7 +28,7 @@ async def handle_not_big(
         caption = _db_caption
     else:
         caption = ""
-    parse_mode = "Markdown"
+    parse_mode = "markdown"
     if thumb:
         _thumb = await c.download_media(thumb, f"{Config.DOWNLOAD_DIR}/{m.from_user.id}/{m.message_id}/")
     else:
