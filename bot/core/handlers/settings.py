@@ -1,7 +1,7 @@
 # (c) @AbirHasan2005
 
 import asyncio
-from pyrogram import types, errors
+from pyrogram import types, errors, enums
 from configs import Config
 from bot.core.db.database import db
 
@@ -41,7 +41,8 @@ async def show_settings(m: "types.Message"):
         await m.edit(
             text="**Here you can setup your settings:**",
             reply_markup=types.InlineKeyboardMarkup(buttons_markup),
-            disable_web_page_preview=True            
+            disable_web_page_preview=True,
+            parse_mode="enums"
         )
     except errors.MessageNotModified: pass
     except errors.FloodWait as e:
